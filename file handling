@@ -1,0 +1,7 @@
+def file_read(fname):
+    with open(fname, "w") as myfile:
+        myfile.write("hello shalini\n")
+        myfile.write("how are you?")
+    txt = open(fname)
+    print(txt.read())
+file_read('abc.txt')
