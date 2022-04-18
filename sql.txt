@@ -1,0 +1,6 @@
+SELECT AI.CUSTOMER_ID, AI.ACCOUNT_TYPE, AI.ACCOUNT_NO, BI.BANK_NAME
+	 FROM account_info AI
+	 JOIN bank_info BI
+       on AI.IFSC_CODE = BI.IFSC_CODE
+       where AI.registration_date between'2012-01-13'and '2012-04-03'
+       and  BI.bank_Name = 'HDFC';
